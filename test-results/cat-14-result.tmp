@@ -1,0 +1,36 @@
+(TEST 14) Save then Load
+COMMENTS:
+
+program: cat test-results/sp8.tm
+Failure messages:
+- FAILURE: Output Mismatch at lines marked
+
+--- Side by Side Differences ---
+- Expect output in: test-results/raw/cat-14-expect.tmp
+- Actual output in: test-results/raw/cat-14-actual.tmp
+- Differing lines have a character like '|' in the middle\n
+==== EXPECT ====   ==== ACTUAL ====
+Kyle 1             Kyle 1
+  Cartman 3      | Cartman 3
+    Butters 5    | Butters 5
+    Kenny 4      | Kenny 4
+  Stan 2         | Stan 2
+    MrGarrison 8 | MrGarrison 8
+    Token 6      | Token 6
+      Wendy 7    | Wendy 7
+--- Line Differences ---
+EXPECT:   2)   Cartman 3
+EXPECT:   3)     Butters 5
+EXPECT:   4)     Kenny 4
+EXPECT:   5)   Stan 2
+EXPECT:   6)     MrGarrison 8
+EXPECT:   7)     Token 6
+EXPECT:   8)       Wendy 7
+ACTUAL:   2) Cartman 3
+ACTUAL:   3) Butters 5
+ACTUAL:   4) Kenny 4
+ACTUAL:   5) Stan 2
+ACTUAL:   6) MrGarrison 8
+ACTUAL:   7) Token 6
+ACTUAL:   8) Wendy 7
+

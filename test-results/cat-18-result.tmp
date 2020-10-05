@@ -1,0 +1,32 @@
+(TEST 18) Sample Script
+COMMENTS:
+Check that the saved tree looks right.
+//#+TESTY: use_valgrind=0
+
+program: cat test-results/stranger.tm
+Failure messages:
+- FAILURE: Output Mismatch at lines marked
+
+--- Side by Side Differences ---
+- Expect output in: test-results/raw/cat-18-expect.tmp
+- Actual output in: test-results/raw/cat-18-actual.tmp
+- Differing lines have a character like '|' in the middle\n
+==== EXPECT ====    ==== ACTUAL ==== 
+El strange          El strange
+  Dustin corny    | Dustin corny
+  Mike stoic      | Mike stoic
+    Lucas brash   | Lucas brash
+    Will lost     | Will lost
+      Steve hairy | Steve hairy
+--- Line Differences ---
+EXPECT:   2)   Dustin corny
+EXPECT:   3)   Mike stoic
+EXPECT:   4)     Lucas brash
+EXPECT:   5)     Will lost
+EXPECT:   6)       Steve hairy
+ACTUAL:   2) Dustin corny
+ACTUAL:   3) Mike stoic
+ACTUAL:   4) Lucas brash
+ACTUAL:   5) Will lost
+ACTUAL:   6) Steve hairy
+

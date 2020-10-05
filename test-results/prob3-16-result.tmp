@@ -1,0 +1,10 @@
+(TEST 16) Multiple Saves
+COMMENTS:
+Saves multiple trees and loads between them to ensure that the trees
+are restored and no memory leaks occur.
+
+
+program: ./treemap_main -echo
+Failure messages:
+- FAILURE(137) due to TIMEOUT: Runtime exceeded maximum of '5s'
+

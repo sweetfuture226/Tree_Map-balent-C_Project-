@@ -1,0 +1,13 @@
+(TEST 7) End of Input
+COMMENTS:
+Checks that if the end of input is reached, the program exits
+correctly printing nothing extra. End of input is triggered
+interactively by pressing 'Ctrl-d' in a terminal. In batch mode, it is
+triggered by reaching the end of an input stream (file). In such
+cases, C input functions like fscanf() return the special value EOF.
+
+
+program: ./treemap_main -echo
+Failure messages:
+- FAILURE(137) due to TIMEOUT: Runtime exceeded maximum of '5s'
+
